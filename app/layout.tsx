@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Emiedonmokumo Dick-Boro",
     description: "Full-stack developer specializing in building scalable web applications and seamless user experiences.",
-    image: `${process.env.BASE_URL}/localhost_3000_.png`, // Add the same URL of the image here
+    images: `${process.env.BASE_URL}/localhost_3000_.png`, // Add the same URL of the image here
   },
 };
 
