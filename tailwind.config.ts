@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        kameron: ["var(--font-kameron)", "sans-serif"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+      },
+      screens: {
+        sm: { 'max': '480px' },
+        md: { 'min': '481px', 'max': '768px' },
+        lg: { 'min': '769px' }
+      },
     },
   },
   plugins: [],
