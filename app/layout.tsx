@@ -16,6 +16,23 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Emiedonmokumo Dick-Boro",
   description: "Full-stack developer specializing in building scalable web applications and seamless user experiences.",
+  openGraph: {
+    title: "Emiedonmokumo Dick-Boro",
+    description: "Full-stack developer specializing in building scalable web applications and seamless user experiences.",
+    url: `${process.env.BASE_URL}`, // Add the URL of your site
+    images: [
+      {
+        url: `${process.env.BASE_URL}/localhost_3000_.png`, // Add the URL of the image you want to use
+        alt: "Emiedonmokumo Dick-Boro",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Emiedonmokumo Dick-Boro",
+    description: "Full-stack developer specializing in building scalable web applications and seamless user experiences.",
+    image: `${process.env.BASE_URL}/localhost_3000_.png`, // Add the same URL of the image here
+  },
 };
 
 export default function RootLayout({
