@@ -44,16 +44,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kameron.variable} ${montserrat.variable} antialiased h-screen lg:px-16 sm:px-5`}
+        className={`${kameron.variable} ${montserrat.variable} antialiased h-screen lg:px-16 sm:px-5 font-montserrat`}
       >
-        <header className="mb-32">
+        <header className="lg:mb-32">
           <NavBar />
         </header>
-        <div className="relative flex flex-col justify-center sm:flex-col-reverse">
-          <div className="lg:absolute lg:right-3 sm:px-5 sm:mt-3">
+        <div className="lg:relative flex flex-col justify-center sm:flex-col-reverse">
+          <div className="lg:absolute right-3 sm:hidden">
             <SocialMedia />
           </div>
-          {children}
+          <div className="lg:mr-36">
+            {children}
+          </div>
         </div>
       </body>
     </html>

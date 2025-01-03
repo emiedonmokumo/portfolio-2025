@@ -12,7 +12,7 @@ const NavBar = () => {
 
     return (
         <nav className='font-montserrat py-5 sm:relative'>
-            <div className={`flex justify-between items-center ${isMobileMenuOpen && 'sm:hidden'}`}>
+            <div className={`flex justify-between items-center`}>
                 {/* Logo */}
                 <div>
                     <Link href={'/'} className='font-semibold hover:text-gray-400 sm:text-sm'>Emiedonmokumo.</Link>
@@ -44,13 +44,13 @@ const NavBar = () => {
             {/* Mobile Menu with Slide-In Effect */}
             {isMobileMenuOpen && (
                 <motion.div
-                    className='lg:hidden fixed top-0 left-0 p-5 z-10 h-screen bg-white w-full overflow-hidden' // Changed w-[100%] to w-full
-                    initial={{ x: '100%' }} // Start from the right
+                    className='lg:hidden fixed top-0 left-0 p-5 z-10 h-screen bg-white w-full overflow-hidden flex flex-col items-end text-right' // Changed w-[100%] to w-full
+                    initial={{ x: '-100%' }} // Start from the right
                     animate={{ x: 0 }} // Slide to the normal position
                     exit={{ x: '100%' }} // Slide back to the right
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }} // Customize the speed and easing
                 >
-                    <button onClick={toggleMobileMenu} className='p-2'>
+                    <button onClick={toggleMobileMenu} className='p-2 sm:mb-8'>
                         {isMobileMenuOpen ? (
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -63,9 +63,10 @@ const NavBar = () => {
                     </button>
 
                     <div>
-                        <ul className='flex flex-col'>
+                        <ul className='flex flex-col space-y-2'>
+                            <li><button onClick={toggleMobileMenu}><Link href={'/'} className=''>Home</Link></button></li>
                             <li><Link href={'#'} className=''>About</Link></li>
-                            <li><Link href={'/skills'} className=''>Skills</Link></li>
+                            <li><button onClick={toggleMobileMenu}><Link href={'/skills'} className=''>Skills</Link></button></li>
                             <li><Link href={'#'} className=''>Projects</Link></li>
                         </ul>
                     </div>
