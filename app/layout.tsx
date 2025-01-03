@@ -46,7 +46,7 @@ export default function RootLayout({
       <body
         className={`${kameron.variable} ${montserrat.variable} antialiased h-screen lg:px-16 sm:px-5`}
       >
-        <header className="lg:mb-32">
+        <header className="mb-32">
           <NavBar />
         </header>
         <div className="relative flex flex-col justify-center sm:flex-col-reverse">
