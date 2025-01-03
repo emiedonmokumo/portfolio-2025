@@ -44,7 +44,7 @@ const NavBar = () => {
             {/* Mobile Menu with Slide-In Effect */}
             {isMobileMenuOpen && (
                 <motion.div
-                    className='lg:hidden absolute z-10 h-screen bg-white w-full' // Changed w-[100%] to w-full
+                    className='lg:hidden fixed top-0 left-0 p-5 z-10 h-screen bg-white w-full overflow-hidden' // Changed w-[100%] to w-full
                     initial={{ x: '100%' }} // Start from the right
                     animate={{ x: 0 }} // Slide to the normal position
                     exit={{ x: '100%' }} // Slide back to the right
@@ -62,11 +62,16 @@ const NavBar = () => {
                         )}
                     </button>
 
-                    <Link href={'#'} className='block'>About</Link>
-                    <Link href={'/skills'} className='block'>Skills</Link>
-                    <Link href={'#'} className='block'>Projects</Link>
+                    <div>
+                        <ul className='flex flex-col'>
+                            <li><Link href={'#'} className=''>About</Link></li>
+                            <li><Link href={'/skills'} className=''>Skills</Link></li>
+                            <li><Link href={'#'} className=''>Projects</Link></li>
+                        </ul>
+                    </div>
                 </motion.div>
             )}
+
 
         </nav>
     );
