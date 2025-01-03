@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Kameron, Montserrat } from "next/font/google";
 import "./globals.css";
 import SocialMedia from "@/components/SocialMedia";
+import NavBar from "@/components/NavBar";
 
 const kameron = Kameron({
   subsets: ['latin'],
@@ -43,12 +44,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kameron.variable} ${montserrat.variable} antialiased relative h-screen flex flex-col justify-center sm:flex-col-reverse`}
+        className={`${kameron.variable} ${montserrat.variable} antialiased h-screen px-16 sm:px-5`}
       >
-        <div className="lg:absolute lg:right-3 sm:px-5 sm:mt-3">
-          <SocialMedia />
+        <header className="mb-32">
+          <NavBar />
+        </header>
+        <div className="relative flex flex-col justify-center sm:flex-col-reverse">
+          <div className="lg:absolute lg:right-3 sm:px-5 sm:mt-3">
+            <SocialMedia />
+          </div>
+          {children}
         </div>
-        {children}
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ import { FaMessage } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center space-y-3 px-5 font-montserrat">
+    <main className="flex flex-col justify-center space-y-3 font-montserrat">
       <ProfileImage />
       <div>
         <div className="flex flex-col space-y-3 sm:space-y-1">
