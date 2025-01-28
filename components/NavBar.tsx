@@ -22,7 +22,7 @@ const NavBar = () => {
                 <div className='space-x-3 sm:hidden'>
                     <Link href={'#'} className='p-3 rounded-full hover:border hover:bg-gray-400 hover:bg-opacity-5'>About</Link>
                     <Link href={'/skills'} className='p-3 rounded-full hover:border hover:bg-gray-400 hover:bg-opacity-5'>Skills</Link>
-                    <Link href={'#'} className='p-3 rounded-full hover:border hover:bg-gray-400 hover:bg-opacity-5'>Projects</Link>
+                    <Link href={'/projects'} className='p-3 rounded-full hover:border hover:bg-gray-400 hover:bg-opacity-5'>Projects</Link>
                 </div>
 
                 {/* Mobile Menu Toggle Button */}

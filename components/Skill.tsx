@@ -10,7 +10,7 @@ const Skills = () => {
                 </div>
             </div>
             <div className="shadow-md p-2 flex space-x-2 items-center lg:m-2">
-                <h3>Next.JS</h3>
+                <h3>NextJS</h3>
                 <div className="w-10 h-10 flex items-center justify-center overflow-hidden">
                     <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png" className="w-full h-full object-contain" alt="Next.js Logo" />
                 </div>
@@ -43,6 +43,18 @@ const Skills = () => {
                 <h3>MongoDB</h3>
                 <div className="w-10 h-10 flex items-center justify-center overflow-hidden">
                     <img src="/mongodb.png" className="w-full h-full object-contain" alt="Next.js Logo" />
+                </div>
+            </div>
+            <div className="shadow-md p-2 flex space-x-2 items-center lg:m-2">
+                <h3>Typescript</h3>
+                <div className="w-10 h-10 flex items-center justify-center overflow-hidden">
+                    <img src="https://static-00.iconduck.com/assets.00/file-type-typescript-icon-2048x1349-0um6gqic.png" className="w-full h-full object-contain" alt="Next.js Logo" />
+                </div>
+            </div>
+            <div className="shadow-md p-2 flex space-x-2 items-center lg:m-2">
+                <h3>AWS</h3>
+                <div className="w-10 h-10 flex items-center justify-center overflow-hidden">
+                    <img src="https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png" className="w-full h-full object-contain" alt="Next.js Logo" />
                 </div>
             </div>
         </div>
