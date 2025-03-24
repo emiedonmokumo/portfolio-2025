@@ -35,8 +35,7 @@ export const metadata: Metadata = {
     images: `${process.env.BASE_URL}/localhost_3000_.png`, // Add the same URL of the image here
   },
   other: {
-    // 'google-site-verification': 'Rf9U2si7AacOinMQi6-IenZjPeW47kztl1bj1dvXiuU',
-    'google-site-verification': 'vWzNEY6cDsstzpHOOJTaBeB8heF8motGm9FM1nQwuFo'
+    'google-site-verification': 'Rf9U2si7AacOinMQi6-IenZjPeW47kztl1bj1dvXiuU'
   }
 };
 
