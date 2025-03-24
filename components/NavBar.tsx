@@ -11,7 +11,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav className='font-montserrat py-5 sm:relative'>
+        <nav className='font-montserrat py-5 sm:relative text-gray-600'>
             <div className={`flex justify-between items-center`}>
                 {/* Logo */}
                 <div>
