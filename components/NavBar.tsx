@@ -67,7 +67,7 @@ const NavBar = () => {
                             <li><button onClick={toggleMobileMenu}><Link href={'/'} className=''>Home</Link></button></li>
                             <li><Link href={'#'} className=''>About</Link></li>
                             <li><button onClick={toggleMobileMenu}><Link href={'/skills'} className=''>Skills</Link></button></li>
-                            <li><Link href={'#'} className=''>Projects</Link></li>
+                            <li><Link href={'/projects'} className=''>Projects</Link></li>
                         </ul>
                     </div>
                 </motion.div>

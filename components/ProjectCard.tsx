@@ -23,7 +23,7 @@ export default function ProjectCard({ title, description, imageSrc, link, github
       whileTap={{ scale: 0.98 }}
       className="w-full"
     >
-      <Card className="flex sm:flex-col overflow-hidden shadow-lg h-[300px]">
+      <Card className="flex sm:flex-col overflow-hidden shadow-lg lg:h-[300px]">
         {/* Slideshow */}
         <div className="relative h-full sm:h-52 w-full overflow-hidden">
           <AnimatePresence mode="wait">
@@ -60,13 +60,13 @@ export default function ProjectCard({ title, description, imageSrc, link, github
           </button>
         </div>
 
-        <CardContent className="w-[60%] p-4 flex flex-col justify-between">
+        <CardContent className="lg:w-[60%] p-4 flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-2">{title}</h2>
             <p className="text-sm text-gray-600 text-justify">{description}</p>
           </div>
 
-          <div className="flex space-x-2 items-center">
+          <div className="flex space-x-2 items-center sm:mt-2">
             <Button asChild className="w-full cursor-pointer">
               <a href={link} target="_blank" rel="noopener noreferrer">
                 View Project
