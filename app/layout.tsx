@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     description: "Full-stack developer specializing in building scalable web applications and seamless user experiences.",
     images: `${process.env.BASE_URL}/localhost_3000_.png`, // Add the same URL of the image here
   },
+  other: {
+    'google-site-verification': 'Rf9U2si7AacOinMQi6-IenZjPeW47kztl1bj1dvXiuU',
+  }
 };
 
 export default function RootLayout({
