@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://emiedonmokumo.vercel.app
+
+# Sitemaps
+Sitemap: https://emiedonmokumo.vercel.app/sitemap.xml
